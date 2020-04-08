@@ -2,7 +2,7 @@ name: GitHub Activity Box
 
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "0 * * * *"
   push:
     branches: master
 
