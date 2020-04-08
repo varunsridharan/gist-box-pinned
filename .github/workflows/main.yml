@@ -16,5 +16,5 @@ jobs:
         uses: yohix/gh-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: c8a7a5ed99f3c6c43b86407fdc95fc44
+          GIST_ID: 1296d82f1b44ee26e6ade56a303f0b19
           CONSIDER_PRIVATE: true
