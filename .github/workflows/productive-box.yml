@@ -1,0 +1,18 @@
+name: Productive Stats
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update gist
+        uses: maxam2017/productive-box@master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: 047ec043adda70d580d1ea2d9023ed3d
+          LOCALE: en-US
