@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Update gist
-        uses: yohix/gh-box@master
+        uses: yg/gh-box@v1.0.5
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 1296d82f1b44ee26e6ade56a303f0b19
