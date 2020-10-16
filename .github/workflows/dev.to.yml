@@ -2,7 +2,7 @@ name: Dev.to Blog Posts
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0/5 * * * *"
 jobs:
   update-gist:
     runs-on: ubuntu-latest
