@@ -1,6 +1,9 @@
 name: COVID Box
 
 on:
+  push:
+    branches: 
+      - main
   schedule:
     - cron: '0 * * * *'
 
