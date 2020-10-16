@@ -1,4 +1,4 @@
-name: Update gist with latest songs
+name: 🎧 Spotify
 on:
   workflow_dispatch:
   schedule:
