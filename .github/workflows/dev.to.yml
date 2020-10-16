@@ -1,0 +1,17 @@
+name: Update gist with latest post
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - name: blog-box
+        uses: aveek-saha/blog-box@v2
+        env:
+          GH_TOKEN: ${{ secrets.GH_GIST_BOX }}
+          GIST_ID: 0ade99912fdbb6b94999657089a42e88
+          DEV_USERNAME: varunsridharan
