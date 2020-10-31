@@ -16,5 +16,5 @@ jobs:
         uses: rangerdigital/dev-box@master
         with:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: ${{ secrets.GIST_ID }}
+          GIST_ID: 0ade99912fdbb6b94999657089a42e88
           DEVTO_USERNAME: varunsridharan
